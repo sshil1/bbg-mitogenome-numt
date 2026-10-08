@@ -1,0 +1,10 @@
+PacBio HiFi mitochondrial genomes (MitoHiFi v2 on hifiasm assemblies)
+
+803M_HiFi_PZ809991.fasta   16,642 bp   GenBank PZ809991   isolate 803M
+D863F_HiFi_PZ809992.fasta  16,640 bp   GenBank PZ809992   isolate D863F
+  source reads: PacBio Revio run r84286_20260723_204918, SMRT cell C01,
+  barcode bc2074, library LIB7421134 (MitoHiFi contig ptg000016c).
+  Sequence is the GenBank submission FASTA (table2asn input), header renamed.
+
+GenBank records are under embargo until publication; both sequences are
+provided here so that reviewers can inspect them.

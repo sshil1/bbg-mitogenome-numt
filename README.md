@@ -14,7 +14,7 @@ Archive: GitHub `sshil1/bbg-mitogenome-numt`; Zenodo DOI: 10.5281/zenodo.2323601
 | `data/per_animal_v7/` | The same sequences, one FASTA per animal (names follow the sampling IDs) |
 | `data/per_animal_v7core/` | As above with positions 4, 14526 and 16495 set to N (used for variant and dN/dS analyses) |
 | `data/provenance/` | Earlier consensus versions (v2: first NUMT-aware remap; v5: after majority resolution; v6: 11 curated positions) |
-| `data/hifi/` | The 803M PacBio HiFi mitogenome (GenBank PZ809991) used as the allele reference |
+| `data/hifi/` | The two PacBio HiFi mitogenomes: 803M (GenBank PZ809991; used as the allele reference) and D863F (GenBank PZ809992). GenBank records are released on publication; see `HIFI_PROVENANCE.txt` |
 | `results/trees/` | IQ-TREE 3.1.3 outputs for complete (56 taxa), D-loop (73) and world (101) sets |
 | `results/alignments/` | MAFFT alignments after rotating all references to the NC_005044.2 origin |
 | `results/diversity/` | pegas summary for v7 and for the conventional consensus; `popgen_v7.log`; Fu's Fs log |
