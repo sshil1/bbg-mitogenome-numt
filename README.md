@@ -4,7 +4,7 @@ Scripts, final consensus sequences and results behind the manuscript
 "NUMT-aware reconstruction of 22 Black Bengal goat (*Capra hircus*) mitogenomes places the breed
 within haplogroup A" (target: *Mitochondrial DNA Part A*).
 
-Archive: GitHub `sshil1/bbg-mitogenome-numt`; Zenodo DOI is added to `CITATION.cff` after the first release. GenBank accessions for the 22 consensus mitogenomes will be added on acceptance.
+Archive: GitHub `sshil1/bbg-mitogenome-numt`; Zenodo DOI: 10.5281/zenodo.23236016. GenBank accessions for the 22 consensus mitogenomes will be added on acceptance.
 
 ## What is here
 
