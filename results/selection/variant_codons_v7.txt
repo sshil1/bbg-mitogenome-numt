@@ -1,0 +1,16 @@
+max missing animals per codon = 2
+gene    syn nonsyn total  codons_excluded
+ND1       3     0     3  0
+ND2       1     1     2  0
+COX1      7     0     7  0
+COX2      0     0     0  0
+ATP8      0     0     0  0
+ATP6      2     1     3  0
+COX3      1     1     2  0
+ND3       1     0     1  0
+ND4L      1     0     1  0
+ND4       6     1     7  0
+ND5       3     3     6  0
+ND6       4     0     4  0
+CYTB      2     2     4  0
+TOTAL    31     9    40

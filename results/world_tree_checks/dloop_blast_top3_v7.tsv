@@ -1,0 +1,61 @@
+query	accession	title	identities	align_len	pct_id
+116f	KJ420457	Capra hircus haplotype Hap_9 D-loop, partial sequence; mitochondrial	1200	1210	99.17
+116f	KJ420449	Capra hircus haplotype Hap_19 D-loop, partial sequence; mitochondrial	1199	1210	99.09
+116f	LR884194	Capra hircus genome assembly, organelle: mitochondrion	1198	1210	99.01
+189f	AB162202	Capra hircus mitochondrial DNA, D-loop region, isolate:Patri 10	1190	1210	98.35
+189f	MT747112	Capra hircus isolate ALG_123 D-loop, complete sequence; mitochondrial	1190	1210	98.35
+189f	MT747115	Capra hircus isolate ALG_126 D-loop, complete sequence; mitochondrial	1190	1210	98.35
+1buck_m_	AB162198	Capra hircus mitochondrial DNA, D-loop region, isolate:Teddy 2	1197	1210	98.93
+1buck_m_	AB110569	Capra hircus mitochondrial DNA, D-loop, strain:Lehri 2	1197	1211	98.84
+1buck_m_	AY853290	Capra hircus voucher ZhSa335 D-loop, complete sequence; mitochondrial	1196	1210	98.84
+2183f	AB162202	Capra hircus mitochondrial DNA, D-loop region, isolate:Patri 10	1191	1210	98.43
+2183f	MT747112	Capra hircus isolate ALG_123 D-loop, complete sequence; mitochondrial	1191	1210	98.43
+2183f	MT747115	Capra hircus isolate ALG_126 D-loop, complete sequence; mitochondrial	1191	1210	98.43
+246f	AB110562	Capra hircus mitochondrial DNA, D-loop, strain:Pak Angora 3	1198	1210	99.01
+246f	AB162202	Capra hircus mitochondrial DNA, D-loop region, isolate:Patri 10	1198	1210	99.01
+246f	AB110574	Capra hircus mitochondrial DNA, D-loop, strain:Kohistani 5	1198	1210	99.01
+2869f	AB162202	Capra hircus mitochondrial DNA, D-loop region, isolate:Patri 10	1189	1210	98.26
+2869f	MT747112	Capra hircus isolate ALG_123 D-loop, complete sequence; mitochondrial	1189	1210	98.26
+2869f	MT747115	Capra hircus isolate ALG_126 D-loop, complete sequence; mitochondrial	1189	1210	98.26
+3237m	AB110579	Capra hircus mitochondrial DNA, D-loop, strain:Kamori 1	1195	1210	98.76
+3237m	AB162216	Capra hircus mitochondrial DNA, D-loop region, isolate:Punjab Random goat 27	1195	1210	98.76
+3237m	KY523509	Capra hircus isolate 78 breed Khari Bandipur mitochondrion, complete genome	1195	1210	98.76
+369m	MT747046	Capra hircus isolate ALG_57 D-loop, complete sequence; mitochondrial	1206	1211	99.59
+369m	MT747044	Capra hircus isolate ALG_55 D-loop, complete sequence; mitochondrial	1206	1211	99.59
+369m	MT747045	Capra hircus isolate ALG_56 D-loop, complete sequence; mitochondrial	1206	1211	99.59
+4_Female	AY853290	Capra hircus voucher ZhSa335 D-loop, complete sequence; mitochondrial	1180	1210	97.52
+4_Female	KP164647	Capra hircus isolate XSG1 D-loop, partial sequence; mitochondrial	1177	1210	97.27
+4_Female	OP921597	Capra hircus haplotype QQHap6 D-loop, complete sequence; mitochondrial	1177	1210	97.27
+4lb__f_	LS992613	Capra hircus genome assembly, organelle: mitochondrion	1196	1210	98.84
+4lb__f_	KR059205	Capra hircus isolate 61_Ch29 haplogroup A mitochondrion, complete genome	1196	1210	98.84
+4lb__f_	PZ360446	Capra hircus isolate P1 mitochondrion, complete genome	1196	1210	98.84
+584f	KJ420473	Capra hircus haplotype Hap_43 D-loop, partial sequence; mitochondrial	1200	1210	99.17
+584f	MK139101	Capra hircus isolate ALG_1 D-loop, complete sequence; mitochondrial	1198	1210	99.01
+584f	MT747118	Capra hircus isolate ALG_129 D-loop, complete sequence; mitochondrial	1198	1210	99.01
+7ps__f_	AB110565	Capra hircus mitochondrial DNA, D-loop, strain:Nachi 9	1199	1210	99.09
+7ps__f_	OP921599	Capra hircus haplotype QQHap8 D-loop, complete sequence; mitochondrial	1198	1210	99.01
+7ps__f_	DQ121563	Capra hircus isolate HHG14 D-loop, partial sequence; mitochondrial	1198	1210	99.01
+803m	OP921599	Capra hircus haplotype QQHap8 D-loop, complete sequence; mitochondrial	1198	1210	99.01
+803m	AB110562	Capra hircus mitochondrial DNA, D-loop, strain:Pak Angora 3	1198	1210	99.01
+803m	AB162202	Capra hircus mitochondrial DNA, D-loop region, isolate:Patri 10	1198	1210	99.01
+836m	KJ420473	Capra hircus haplotype Hap_43 D-loop, partial sequence; mitochondrial	1201	1210	99.26
+836m	MK139101	Capra hircus isolate ALG_1 D-loop, complete sequence; mitochondrial	1199	1210	99.09
+836m	MT747118	Capra hircus isolate ALG_129 D-loop, complete sequence; mitochondrial	1199	1210	99.09
+849m	AB162202	Capra hircus mitochondrial DNA, D-loop region, isolate:Patri 10	1190	1210	98.35
+849m	MT747112	Capra hircus isolate ALG_123 D-loop, complete sequence; mitochondrial	1190	1210	98.35
+849m	MT747115	Capra hircus isolate ALG_126 D-loop, complete sequence; mitochondrial	1190	1210	98.35
+9ks__f_	KM464510	Capra hircus isolate GS47 D-loop, complete sequence; mitochondrial	1201	1211	99.17
+9ks__f_	AY860897	Capra hircus isolate ZhJcB295 D-loop, partial sequence; mitochondrial	1201	1211	99.17
+9ks__f_	JX286541	Capra hircus isolate 10055 cytochrome b (cytb) gene, complete cds; and tRNA-Thr and tRNA-Pro genes and D-loop, complete sequence; mitochondrial	1201	1211	99.17
+Bk_6__m_	AB162202	Capra hircus mitochondrial DNA, D-loop region, isolate:Patri 10	1181	1210	97.6
+Bk_6__m_	MT747115	Capra hircus isolate ALG_126 D-loop, complete sequence; mitochondrial	1181	1210	97.6
+Bk_6__m_	MT747114	Capra hircus isolate ALG_125 D-loop, complete sequence; mitochondrial	1181	1210	97.6
+Hir_13_m_	AB110565	Capra hircus mitochondrial DNA, D-loop, strain:Nachi 9	1206	1211	99.59
+Hir_13_m_	AB110558	Capra hircus mitochondrial DNA, D-loop, strain:Patri 3	1203	1210	99.42
+Hir_13_m_	AB110569	Capra hircus mitochondrial DNA, D-loop, strain:Lehri 2	1203	1211	99.34
+Hir_5f	AB162202	Capra hircus mitochondrial DNA, D-loop region, isolate:Patri 10	1197	1210	98.93
+Hir_5f	AB110565	Capra hircus mitochondrial DNA, D-loop, strain:Nachi 9	1197	1210	98.93
+Hir_5f	OP921599	Capra hircus haplotype QQHap8 D-loop, complete sequence; mitochondrial	1196	1210	98.84
+Kh_5__m_	AB110565	Capra hircus mitochondrial DNA, D-loop, strain:Nachi 9	1205	1210	99.59
+Kh_5__m_	OP921599	Capra hircus haplotype QQHap8 D-loop, complete sequence; mitochondrial	1205	1211	99.5
+Kh_5__m_	DQ121563	Capra hircus isolate HHG14 D-loop, partial sequence; mitochondrial	1204	1210	99.5

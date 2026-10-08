@@ -1,0 +1,118 @@
+##### old: nuc.div lines
+28:pi <- nuc.div(bbg, pairwise.deletion = TRUE)
+##### old: diversity_neutrality
+
+Attaching package: ‘pegas’
+
+The following object is masked from ‘package:ape’:
+
+    mst
+
+Subset dimensions (animals x sites): 22 x 2346 
+Warning message:
+In haplotype.DNAbin(x) :
+  some sequences of different lengths were assigned to the same haplotype
+Warning message:
+In haplotype.DNAbin(bbg) :
+  some sequences of different lengths were assigned to the same haplotype
+
+Wrote bbg_diversity_summary.csv
+                Statistic         Value
+1               N_animals  2.200000e+01
+2     Alignment_length_bp  2.346000e+03
+3 Nucleotide_diversity_pi  7.628785e-03
+4  Haplotype_diversity_Hd  9.826840e-01
+5            N_haplotypes  1.800000e+01
+6     N_polymorphic_sites  5.400000e+01
+7               Tajimas_D -1.567295e+00
+8   Tajimas_D_Pvalue_beta  1.047847e-01
+9 Tajimas_D_Pvalue_normal  1.170456e-01
+null device 
+          1 
+Wrote bbg_mismatch_distribution.png
+##### old: fus_fs
+Warning message:
+In haplotype.DNAbin(dna_bbg) :
+  some sequences of different lengths were assigned to the same haplotype
+n = 22 
+k (observed haplotypes) = 18 
+theta_pi (mean pairwise differences) = 8.9481 
+
+CORRECTED pi (pairwise.deletion=TRUE): 0.00763 
+  (original pi=0.00536 used pegas default complete-deletion, which
+   silently drops any column with a gap in ANY of the 22 sequences --
+   confirmed only 1144/2346 columns survived that default)
+
+Tajima's D (confirmed unaffected by the pi bug): -1.5673 
+  P-value (normal): 0.117 
+
+=== Fu's Fs ===
+Fs = -6.1488 
+S' (P[K >= k_obs]) = 2.131505e-03 
+Sanity check -- sum of P(K=i) over i=1..n (should be ~1.0): 1 
+
+Interpretation: Fu's Fs is conventionally judged significant at
+p < 0.02 (not the usual 0.05), per Fu (1997), because of the test's
+asymmetric null distribution. A large negative Fs (roughly < -2) is
+commonly treated as significant evidence of an excess of rare
+haplotypes, consistent with population expansion or a selective sweep.
+##### v2: nuc.div lines
+28:pi <- nuc.div(bbg, pairwise.deletion = TRUE)
+##### v2: diversity_neutrality
+
+Attaching package: ‘pegas’
+
+The following object is masked from ‘package:ape’:
+
+    mst
+
+Subset dimensions (animals x sites): 22 x 2343 
+Warning message:
+In haplotype.DNAbin(x) :
+  some sequences of different lengths were assigned to the same haplotype
+Warning message:
+In haplotype.DNAbin(bbg) :
+  some sequences of different lengths were assigned to the same haplotype
+
+Wrote bbg_diversity_summary.csv
+                Statistic         Value
+1               N_animals  2.200000e+01
+2     Alignment_length_bp  2.343000e+03
+3 Nucleotide_diversity_pi  8.845803e-03
+4  Haplotype_diversity_Hd  9.696970e-01
+5            N_haplotypes  1.600000e+01
+6     N_polymorphic_sites  4.900000e+01
+7               Tajimas_D -8.355240e-01
+8   Tajimas_D_Pvalue_beta  4.378572e-01
+9 Tajimas_D_Pvalue_normal  4.034228e-01
+Fontconfig warning: using without calling FcInit()
+null device 
+          1 
+Wrote bbg_mismatch_distribution.png
+##### v2: fus_fs
+Warning message:
+In haplotype.DNAbin(dna_bbg) :
+  some sequences of different lengths were assigned to the same haplotype
+n = 22 
+k (observed haplotypes) = 16 
+theta_pi (mean pairwise differences) = 10.5931 
+
+CORRECTED pi (pairwise.deletion=TRUE): 0.00885 
+  (original pi=0.00536 used pegas default complete-deletion, which
+   silently drops any column with a gap in ANY of the 22 sequences --
+   confirmed only 1144/2346 columns survived that default)
+
+Tajima's D (confirmed unaffected by the pi bug): -0.8355 
+  P-value (normal): 0.4034 
+
+=== Fu's Fs ===
+Fs = -2.6807 
+S' (P[K >= k_obs]) = 6.412189e-02 
+Sanity check -- sum of P(K=i) over i=1..n (should be ~1.0): 1 
+
+Interpretation: Fu's Fs is conventionally judged significant at
+p < 0.02 (not the usual 0.05), per Fu (1997), because of the test's
+asymmetric null distribution. A large negative Fs (roughly < -2) is
+commonly treated as significant evidence of an excess of rare
+haplotypes, consistent with population expansion or a selective sweep.
+ALL_DONE

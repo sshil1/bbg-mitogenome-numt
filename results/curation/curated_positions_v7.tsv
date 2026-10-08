@@ -1,0 +1,17 @@
+position	group	curated_allele	v2_calls	v5_calls	v6_calls	v7_calls	animals_changed_v5_to_v7
+51	universal_mixed_site	G	G:1;R:21	G:22	G:22	G:22	0
+56	universal_mixed_site	A	R:22	A:22	A:22	A:22	0
+100	universal_mixed_site	C	T:4;Y:18	C:18;T:4	C:22	C:22	4
+105	universal_mixed_site	C	T:4;Y:18	C:18;T:4	C:22	C:22	4
+152	universal_mixed_site	A	R:22	A:22	A:22	A:22	0
+161	universal_mixed_site	A	A:7;R:15	A:22	A:22	A:22	0
+193	universal_mixed_site	T	Y:22	T:22	T:22	T:22	0
+201	universal_mixed_site	T	Y:22	T:22	T:22	T:22	0
+203	added_in_v7_12S_region	C	T:12;Y:10	T:21;Y:1	T:21;Y:1	C:22	22
+211	added_in_v7_12S_region	C	T:8;Y:14	T:19;Y:3	T:19;Y:3	C:22	22
+227	universal_mixed_site	T	C:1;Y:21	C:1;T:21	T:22	T:22	1
+283	universal_mixed_site	G	R:22	G:22	G:22	G:22	0
+289	universal_mixed_site	C	C:1;Y:21	C:22	C:22	C:22	0
+4	masked_N_in_core_set	-	G:2;N:1;R:19	A:2;G:7;N:1;R:12	A:2;G:7;N:1;R:12	A:2;G:7;N:1;R:12	0
+14526	masked_N_in_core_set	-	C:20;Y:2	C:20;T:2	C:20;T:2	C:20;T:2	0
+16495	masked_N_in_core_set	-	T:21;Y:1	C:1;T:21	C:1;T:21	C:1;T:21	0

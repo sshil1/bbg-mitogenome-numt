@@ -1,0 +1,90 @@
+import csv,collections,io
+GT="""No,Gene,Strand,Start,Stop,Length_bp,Start_codon,Stop_codon,Intergenic_nt
+1,tRNA-Phe,H,1,68,68,-,-,-
+2,12S rRNA,H,69,1024,956,-,-,0
+3,tRNA-Val,H,1025,1091,67,-,-,0
+4,16S rRNA,H,1092,2663,1572,-,-,0
+5,tRNA-Leu(UUR),H,2665,2739,75,-,-,1
+6,ND1,H,2742,3698,957,ATG,TAA,2
+7,tRNA-Ile,H,3698,3766,69,-,-,-1
+8,tRNA-Gln,L,3764,3835,72,-,-,-3
+9,tRNA-Met,H,3838,3906,69,-,-,2
+10,ND2,H,3907,4950,1044,ATA,TAG,0
+11,tRNA-Trp,H,4949,5015,67,-,-,-2
+12,tRNA-Ala,L,5017,5085,69,-,-,1
+13,tRNA-Asn,L,5087,5159,73,-,-,1
+14,OL,H,5162,5192,31,-,-,2
+15,tRNA-Cys,L,5192,5259,68,-,-,-1
+16,tRNA-Tyr,L,5260,5327,68,-,-,0
+17,COX1,H,5329,6873,1545,ATG,TAA,1
+18,tRNA-Ser(UCN),L,6871,6939,69,-,-,-3
+19,tRNA-Asp,H,6947,7014,68,-,-,7
+20,COX2,H,7016,7699,684,ATG,TAA,1
+21,tRNA-Lys,H,7703,7769,67,-,-,3
+22,ATP8,H,7771,7968,198,ATG,TAA,1
+23,ATP6,H,7929,8609,681,ATG,TAA,-40
+24,COX3,H,8609,9392,784,ATG,T-,-1
+25,tRNA-Gly,H,9393,9461,69,-,-,0
+26,ND3,H,9471,9818,348,ATA,TAG,9
+27,tRNA-Arg,H,9809,9877,69,-,-,-10
+28,ND4L,H,9878,10174,297,ATG,TAA,0
+29,ND4,H,10168,11545,1378,ATG,T-,-7
+30,tRNA-His,H,11546,11616,71,-,-,0
+31,tRNA-Ser(AGY),H,11617,11676,60,-,-,0
+32,tRNA-Leu(CUN),H,11678,11747,70,-,-,1
+33,ND5,H,11739,13568,1830,ATA,TAA,-9
+34,ND6,L,13552,14079,528,ATG,TAA,-17
+35,tRNA-Glu,L,14080,14148,69,-,-,0
+36,CYTB,H,14153,15292,1140,ATG,AGA,4
+37,tRNA-Thr,H,15296,15365,70,-,-,3
+38,tRNA-Pro,L,15365,15430,66,-,-,-1
+39,OH_1,L,15827,15936,110,-,-,396
+40,OH_0,H,15890,16425,536,-,-,-47
+"""
+open('gene_table_v7.csv','w').write(GT)
+genes=list(csv.DictReader(io.StringIO(GT)))
+def rd(p):
+    k=None;d={}
+    for l in open(p):
+        l=l.strip()
+        if l.startswith('>'): k=l[1:].split()[0]; d[k]=[]
+        elif k: d[k].append(l)
+    return {a:''.join(b).upper() for a,b in d.items()}
+v7=rd('v7x/mt_remap/bbg_22S_mt_consensus_v7.fasta')
+comp=str.maketrans('ACGTRYKMSWBDHVN','TGCAYRMKSWVHDBN')
+rc=lambda s:s.translate(comp)[::-1]
+PCG=['ND1','ND2','COX1','COX2','ATP8','ATP6','COX3','ND3','ND4L','ND4','ND5','ND6','CYTB']
+# codon check per animal
+bad=collections.Counter(); amb=collections.Counter()
+for a,s in v7.items():
+    for g in genes:
+        if g['Gene'] not in PCG: continue
+        st,en=int(g['Start']),int(g['Stop']); seq=s[st-1:en]
+        if g['Strand']=='L': seq=rc(seq)
+        if seq[:3]!=g['Start_codon']: bad[(g['Gene'],'start',seq[:3])]+=1
+        stop=g['Stop_codon']
+        last=seq[-3:] if stop!='T-' else seq[-1:]
+        if stop=='T-': 
+            if last!='T': bad[(g['Gene'],'stop',last)]+=1
+        elif last!=stop: bad[(g['Gene'],'stop',last)]+=1
+        if any(c not in 'ACGT' for c in seq): amb[g['Gene']]+=1
+print('start/stop deviations across 22 animals:',dict(bad)); print('PCGs containing non-ACGT, animals:',dict(amb))
+# overall + per-strand composition for 803m (ACGT only)
+def comp_(seq):
+    c=collections.Counter(x for x in seq if x in 'ACGT'); n=sum(c.values())
+    A,C,G,T=(c[x] for x in 'ACGT'); return n,A/n*100,C/n*100,G/n*100,T/n*100,(A-T)/(A+T),(G-C)/(G+C)
+s=v7['803m']
+print('803m whole genome n,A,C,G,T,ATskew,GCskew:',[round(x,3) for x in comp_(s)],'non-ACGT',sum(c not in 'ACGT' for c in s))
+pcg=''
+for g in genes:
+    if g['Gene'] in PCG:
+        seq=s[int(g['Start'])-1:int(g['Stop'])]
+        if g['Gene']=='ND6': seq=rc(seq)
+        pcg+=seq
+print('PCGs (all 13, H-strand sense):',[round(x,3) for x in comp_(pcg)])
+pcg12=''.join(s[int(g['Start'])-1:int(g['Stop'])] for g in genes if g['Gene'] in PCG and g['Gene']!='ND6')
+print('12 H-strand PCGs:',[round(x,3) for x in comp_(pcg12)])
+# check the gene table lengths
+for g in genes:
+    if int(g['Stop'])-int(g['Start'])+1!=int(g['Length_bp']): print('LEN MISMATCH',g['Gene'])
+print('sum PCG len',sum(int(g['Length_bp']) for g in genes if g['Gene'] in PCG))

@@ -1,0 +1,10 @@
+
+## bbg_22S_mt_consensus.fasta 
+full mt    sites=16643 complete=16369 S=103 haplotypes=22 Hd=1.0000 pi=0.00197 TajimaD=-0.964 (p=0.335)
+D-loop     sites= 1210 complete= 1144 S= 28 haplotypes=17 Hd=0.9654 pi=0.00763 TajimaD=-0.772 (p=0.440)
+non-D-loop sites=15433 complete=15225 S= 75 haplotypes=22 Hd=1.0000 pi=0.00154 TajimaD=-1.012 (p=0.312)
+
+## bbg_22S_mt_consensus_v7.fasta 
+full mt    sites=16643 complete=16606 S= 87 haplotypes=18 Hd=0.9827 pi=0.00108 TajimaD=-1.454 (p=0.146)
+D-loop     sites= 1210 complete= 1179 S= 40 haplotypes=16 Hd=0.9697 pi=0.00885 TajimaD=-1.046 (p=0.296)
+non-D-loop sites=15433 complete=15427 S= 47 haplotypes=17 Hd=0.9740 pi=0.00048 TajimaD=-1.739 (p=0.082)

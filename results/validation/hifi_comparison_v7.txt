@@ -1,0 +1,20 @@
+HiFi comparison of the v7 consensus sequences (transcribed from the terminal output of
+scripts/hifi_vs_consensus_mismatch.py and scripts/compare_pacbio_to_consensus.py; MAFFT alignment after rotating to a shared anchor)
+
+Reference HiFi assemblies
+  803M  : GenBank PZ809991, 16,642 bp (data/hifi/803M_HiFi_PZ809991.fasta); 803M is one of the 22 animals
+  D863F : GenBank PZ809992, 16,640 bp (an animal outside the 22)
+
+v7 consensus vs the 803M HiFi (positions in v7 coordinates, 16,643 bp)
+  803m : 0 substitutions over 16,633 comparable sites; one 1-bp indel at 11,559 (A in the consensus, absent in the HiFi)
+  814m : 0 substitutions over 16,633 comparable sites; same indel at 11,559
+  Next closest animals: Hir_5f 4, 7ps__f_ 6, Kh_5__m_ 7 mismatches
+  Position 11,559 lies in a poly-A run (9 A in all 22 consensus sequences, 8 A in the HiFi) in the tRNA cluster between ND4 (ends 11,545) and ND5 (starts 11,739).
+  Non-ACGT positions in the consensus (excluded from counts): 15,974-15,981 (N-run in the D-loop repeat; the HiFi reads CTTCTATC) and position 4 (R in the consensus, G in the HiFi; masked in the core set).
+
+Before curation (v6) the same comparison showed two substitutions for 803m and 814m, at positions 203 and 211 (consensus T, HiFi C).
+Read phasing in 803m (110 reads spanning 100/105/152/193/201/203/211): CCATTCC (HiFi-matching) 19 reads, TTGCCTT 60, TTATTTT 18, TTGTCTT 12, TTGNCTT 1.
+Positions 203 and 211 were therefore set to C (results/curation/curated_positions_v7.tsv).
+
+v7 consensus vs the D863F HiFi
+  Closest animals: 7ps__f_ 1 mismatch / 16,632 sites; Hir_5f 2 / 16,631; 855m 3 / 16,634; 803m 6 and 814m 6 / 16,631
